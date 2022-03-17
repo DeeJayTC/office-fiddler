@@ -1,0 +1,93 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <title></title>
+    <script src="../../Scripts/jquery-1.9.1.js" type="text/javascript"></script>
+    <script src="../../Scripts/jquery-1.9.1.js" type="text/javascript"></script>
+    <link href="../../Content/Office.css" rel="stylesheet" type="text/css" />
+    <script src="https://appsforoffice.microsoft.com/lib/1/hosted/office.js" type="text/javascript"></script>
+
+    <script src="/Scripts/codemirror-2.37/lib/codemirror.js" type="text/javascript"></script>
+    <link href="/Scripts/codemirror-2.37/lib/codemirror.css" rel="stylesheet"/>
+    <script src="/Scripts/codemirror-2.37/mode/javascript/javascript.js" type="text/javascript"></script>
+    <script src="/Scripts/codemirror-2.37/mode/xml/xml.js" type="text/javascript"></script>
+    <script src="/Scripts/codemirror-2.37/mode/css/css.js" type="text/javascript"></script>
+
+    <script src="/Scripts/bootstrap.min.js"></script>
+    <link href="/Content/bootstrap.min.css" rel="stylesheet"/>
+    <link href="/Content/font-awesome.css" rel="stylesheet"/>
+
+    <!-- Verwenden Sie einen lokalen Skriptverweis für Office.js, um Offlinedebugging zu aktivieren:                        -->
+    <!-- <script src="../../Scripts/Office/MicrosoftAjax.js" type="text/javascript"></script>  -->
+    <!-- <script src="../../Scripts/Office/1/office.js" type="text/javascript"></script>  -->
+
+    <link href="../App.css" rel="stylesheet" type="text/css" />
+    <script src="../App.js" type="text/javascript"></script>
+
+    <link href="Home.css" rel="stylesheet" type="text/css" />
+    <script src="Home.js" type="text/javascript"></script>
+</head>
+<body>
+
+    <div id="errorModal" class="modal fade" role="dialog" aria-labelledby="errorModal" aria-hidden="true">
+        <div class="modal-dialog error-dialog">
+            <div class="modal-content ">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title fg-color-grayDark error-title"></h4>
+                </div>
+                <div class="modal-body">
+                    <h4 class="error-desc"></h4>
+                </div>
+                <div class="modal-footer">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="infoModal" class="modal fade" role="dialog" aria-labelledby="errorModal" aria-hidden="true">
+        <div class="modal-dialog info-dialog">
+            <div class="modal-content ">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title fg-color-grayDark info-title"></h4>
+                </div>
+                <div class="modal-body">
+                    <h4 class="info-desc"></h4>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="tabs">
+                <ul class="nav nav-tabs" role="tablist">
+                    <li><a id="tab_html" href="#html" role="tab" data-toggle="tab">HTML</a></li>
+                    <li><a id="tab_js" href="#javascript" role="tab" data-toggle="tab">JavaScript</a></li>
+                    <li><a id="tab_css" href="#css" role="tab" data-toggle="tab">CSS</a></li>
+                    <li class="active"><a id="tab_preview" href="#preview" role="tab" data-toggle="tab">Preview</a></li>
+                    <li><a id="cmdRun" style="cursor:pointer"><i class="fa fa-play"></i> Run!</a></li>
+                </ul>
+
+                <div class="tab-content">
+                    <div class="tab-pane" id="html"><textarea id="html_code_id" cols="50" rows="10" spellcheck="false"></textarea></div>
+                    <div class="tab-pane" id="javascript"><textarea id="js_code_id" cols="50" rows="10" spellcheck="false"></textarea></div>
+                    <div class="tab-pane" id="css"><textarea id="css_code_id" cols="50" rows="10" spellcheck="false"></textarea></div>
+                    <div class="tab-pane active" id="preview">
+                        <div class="row" id="previewcontent">
+                            <script>
+
+                            </script>
+ <style>
+              
+                            </style>
+
+
+                        </div>
+
+                            </div>
+                        </div>
+            </div>
+
+</body>
+</html>
